@@ -1,0 +1,266 @@
+/* Global styles */
+ 
+html {
+	background-color:#FFFFFF;
+}
+
+body {
+	font-family: tahoma, serif;
+	color: #000000;
+	background-color:#FFFFFF;
+	max-width: 960px;
+	margin: auto;
+	padding: 20px;
+	min-height: 100%;
+	position: relative;
+}
+
+@font-face {
+font-family:'georgiab';
+src: url('fonts/georgia/georgiab.oft') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+.logo {
+	width: 242px;
+	height: 81px;
+	float: left;
+}
+
+p {
+	font-size:1em;
+	line-height:1.3em;
+	margin: 10px 25px 15px 0px; 
+	padding: 5px;
+}
+
+blockquote {
+	font-size:1em;
+	line-height:1.66em; 
+	margin:15px 0 25px 120px; 
+	font-style:italic;
+}
+	
+h1.banner {
+	font-family: 'georgiab', serif;
+	font-size: 300%;
+	text-align: center;
+}
+
+a:link {color: #800000;}
+a:visited {color: blue;}
+a:hover {color: #909090 ;}
+
+/* nav */
+  
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	text-decoration:none;
+	list-style: none;
+	display: inline-block;
+}
+
+.nav a {
+	padding: 3px 12px;
+	color: #800000;
+	text-decoration:none;
+	line-height: 100%;
+	font-family: 'georgiab', serif;
+	font-size: 1.313em
+}
+
+.nav a:hover {
+	color: #000;
+}
+
+.nav .current a {
+	background: #999;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.flexslider {
+	max-width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.carousel li {margin-right: 5px}
+
+.clear {clear:both;}
+
+/*PORTFOLIO */
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	padding-top: 1px;
+	overflow: hidden;
+}
+
+h3 {
+	font-family: 'georgiab', serif;
+	font-size:1.40em;
+	color: #800000;
+	font-weight: normal;
+	text-align: center;
+}
+
+div.pictures {
+	overflow:auto;
+	max-width:720px;
+	text-align:center;
+	margin:auto;
+}
+
+span.photo img {width:100%;}
+
+h4 {
+	font-family:'georgiab', serif;
+	font-size:1.10em;
+	line-height:15px;
+	margin: 20px 5px 30px 5px;
+	color: #800000;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+a {
+text-decoration: none;
+}
+
+
+/*ABOUT ME */
+
+	.aboutme {
+			max-width:40%;
+			float: left; 
+			margin: 0px 25px 5px 5px;
+			padding: 2px; 
+			}
+
+/* FOOTER */
+  
+#footer {
+	height: 60px;
+	text-align: center;
+	clear: both;
+}
+
+
+  
+  /* RESPONSIVE STYLES */
+  
+  /* Desktop */
+  @media all and (min-width:780px) {
+div.wrapper {
+	min-height: 500px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 5px 20px 10px;
+}
+article {
+	min-height: 350px;
+	clear: both;
+}
+aside {
+	margin-left: 77%;
+	min-height: 350px;
+}
+.slider {
+	max-width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+.nav {
+	margin: 0 0 0 250px;
+	padding: 50px 0 25px 10px;
+}
+
+span.photos {
+	float: left;
+	width: 25%;
+}
+}
+  
+  /* Tablet */
+  @media all and (min-width:481px) and (max-width:779px) {
+div.wrapper {
+	padding: 0 5px 0 5px;
+}
+article {
+	width: 60%;
+	float: left;
+	text-align: justify;
+}
+aside {
+	margin-left: 65%;
+}
+.nav {
+	margin: 0 0 0 250px;
+	padding: 50px 0 25px 10px;
+}
+span.photos {
+	float: left;
+	width: 50%;
+}
+}
+    
+  /* Phone */
+@media screen and (max-width:479px) {
+div.wrapper {
+	padding: 0 5px 0 5px;
+}
+
+.nav {
+	position: relative;
+	min-height: 40px;
+}
+.nav ul {
+	width: 180px;
+	padding: 5px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: solid 1px #aaa;
+	background: #fff url(../images/icon-menu.png) no-repeat 10px 11px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+.nav li {
+	display: none; /* hide all <li> items */
+	margin: 0;
+}
+.nav .current {
+	display: block; /* show only current <li> item */
+}
+.nav a {
+	display: block;
+	padding: 5px 5px 5px 32px;
+	text-align: left;
+}
+.nav .current a {
+	background: none;
+	color: #666;
+}
+/* on nav hover */
+.nav ul:hover {
+	background-image: none;
+}
+.nav ul:hover li {
+	display: block;
+	margin: 0 0 5px;
+}
+.nav ul:hover .current {
+	background: url(../images/icon-check.png) no-repeat 10px 7px;
+}
+}
